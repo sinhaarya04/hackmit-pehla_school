@@ -1,0 +1,33 @@
+{
+  "citation": "",
+  "dataset_size": 4787332,
+  "description": "",
+  "download_checksums": {
+    "https://huggingface.co/datasets/higgsfield/school-math-questions/resolve/185d2217611cb49acd0abf83aecc61dc12a23f40/data/train-00000-of-00001-64200592cd44b51b.parquet": {
+      "num_bytes": 2576099,
+      "checksum": null
+    }
+  },
+  "download_size": 2576099,
+  "features": {
+    "prompt": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "completion": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 7363431,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 4787332,
+      "num_examples": 8792,
+      "dataset_name": "parquet"
+    }
+  }
+}
