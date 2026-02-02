@@ -1,3 +1,74 @@
+# hackmit-pehla_school
+
+[![Repo](https://img.shields.io/badge/GitHub-hackmit-pehla_school-181717?logo=github)](https://github.com/sinhaarya04/hackmit-pehla_school)
+
+## Overview
+
+Pehla School is a platform designed to provide AI-generated lessons, assessments, and access to personalized tutoring for students up to grade 8. The project brings personalized learning into the hands of students and tutors, bridging the gap between rural and urban education.
+
+## Features
+
+- Project-specific implementation and experiments
+
+## Tech Stack
+
+- Node.js
+- React
+- Tailwind CSS
+- npm
+- Python
+
+## Getting Started
+
+### Prerequisites
+
+- Git
+- A recent runtime for the stack above (e.g., Python 3.10+ or Node 18+)
+
+### Installation
+
+```bash
+npm install
+```
+
+### Run / Usage
+
+```bash
+# Common scripts (pick the one your repo supports)
+npm run dev
+npm run build
+npm start
+```
+
+## Project Structure
+
+- `small_math_dataset/`
+- `small_math_dataset_50/`
+- `app.py`
+- `convert.py`
+- `filter_datasets.py`
+- `logo.png`
+- `math_conversations.jsonl`
+- `package-lock.json`
+- `package.json`
+- `project.py`
+
+## Roadmap
+
+- [ ] Add clearer usage examples and expected outputs
+- [ ] Add tests / CI (if applicable)
+- [ ] Document data sources and assumptions (if applicable)
+
+## License
+
+No license file found in this repository.
+
+
+---
+
+## Notes / Original README
+
+The content below is preserved from the previous README for reference.
 
 # Pehla School – From Horizon to Horizon, Learning Made Personal
 
@@ -58,4 +129,3 @@ Pehla School is a platform designed to provide AI-generated lessons, assessments
 - Implement adaptive learning algorithms to personalize lesson difficulty.
 
 ---
-
