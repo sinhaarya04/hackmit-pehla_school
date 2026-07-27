@@ -1,61 +1,61 @@
+# 🏫 Pehla School
 
-# Pehla School – From Horizon to Horizon, Learning Made Personal
+> *From horizon to horizon, learning made personal.*
 
-Pehla School is a platform designed to provide AI-generated lessons, assessments, and access to personalized tutoring for students up to grade 8. The project brings personalized learning into the hands of students and tutors, bridging the gap between rural and urban education.
+![HackMIT 2024](https://img.shields.io/badge/HackMIT-2024-red)
+![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-app-FF4B4B?logo=streamlit&logoColor=white)
+![LLaMA 3.1](https://img.shields.io/badge/Meta%20LLaMA-3.1-0467DF)
+![Made for](https://img.shields.io/badge/Made%20for-grades%20K--8-brightgreen)
 
-## Features
-
-- **AI-Generated Lessons**: Students can input a topic and receive an instant lesson with explanations and practice problems.
-- **Assessment Module**: Take quizzes and receive immediate feedback with correct answers and explanations.
-- **Tutor Booking**: Book a session with one of our tutors, Mrs. Rania or Mrs. Prabhudas, for personalized help.
-- **Bilingual Support**: English and Hindi support to reach a wider audience.
-- **User Authentication**: Simple login system for personalized learning sessions.
-
-## How to Run the Project
-
-1. **Clone the Repository**:
-   ```
-   git clone https://github.com/YourUsername/PehlaSchool.git
-   ```
-
-2. **Install Dependencies**:
-   Navigate to the project folder:
-   ```
-   cd PehlaSchool
-   ```
-   Install the required packages:
-   ```
-   pip install -r requirements.txt
-   ```
-
-3. **Run the Streamlit App**:
-   ```
-   streamlit run app.py
-   ```
-
-   If using GitHub Codespaces, run the above command in the terminal provided by Codespaces.
-
-4. **Access the App**:
-   The Streamlit app will provide a local URL (like `http://localhost:8501`). Open it in your browser to use the platform.
-
-## Demo
-
-- Clone the project and install the dependencies.
-- Run the command `streamlit run app.py`.
-- Open the provided local URL to interact with the app.
-
-## Technology Stack
-
-- **Front-end**: Streamlit for building the user interface.
-- **Backend**: AI-generated lessons using Meta LLaMA 3.1.
-- **APIs**: The app communicates with the API for real-time responses and lesson generation.
-- **Authentication**: Basic user login and session management.
-
-## Future Features
-
-- Expand subject coverage.
-- Develop a mobile application for iOS and Android.
-- Implement adaptive learning algorithms to personalize lesson difficulty.
+Pehla School is an AI-powered learning platform built at **HackMIT** to bridge the gap between rural and urban education. Students up to grade 8 get instant AI-generated lessons, quizzes with feedback, and access to real tutors — in **English and Hindi**.
 
 ---
 
+## ✨ What it does
+
+| Feature | Description |
+|---|---|
+| 🧠 **AI-Generated Lessons** | Type a topic, get an instant lesson with explanations and practice problems |
+| 📝 **Assessments** | Take quizzes and receive immediate feedback with worked answers |
+| 👩‍🏫 **Tutor Booking** | Book a session with a tutor for personalized help |
+| 🌏 **Bilingual** | English + Hindi support to reach a wider audience |
+| 🔐 **Auth** | Simple login for personalized sessions |
+
+## ⚙️ How it works
+
+- A **Streamlit** front end (`app.py`) drives the lesson, quiz, and booking flows.
+- Lessons are generated in real time by **Meta LLaMA 3.1** through an LLM API.
+- Math problems are served from `math_conversations.jsonl`, a curated conversation-style dataset.
+- `convert.py` / `transform.py` / `filter_datasets.py` build and filter the dataset from Hugging Face `datasets` exports.
+
+> **Note on data files:** `small_math_dataset.json` and `small_math_dataset_50.json` are **JSON Lines** (one JSON object per line) despite the `.json` extension — they're written by `datasets.Dataset.to_json()`. Parse them line-by-line, not with a single `json.load()`.
+
+## 🚀 Getting started
+
+```bash
+git clone https://github.com/sinhaarya04/hackmit-pehla_school.git
+cd hackmit-pehla_school
+pip install -r requirements.txt
+
+# add your LLM API key (not committed — see .gitignore)
+echo 'TUNE_API_KEY=your-key-here' > s.env
+
+streamlit run app.py
+```
+
+Open the local URL Streamlit prints (usually `http://localhost:8501`).
+
+## 🛠 Tech stack
+
+`Python` · `Streamlit` · `Meta LLaMA 3.1` · `Hugging Face datasets` · `requests`
+
+## 🔮 Future ideas
+
+- Expand subject coverage beyond math
+- Mobile apps for iOS and Android
+- Adaptive learning to personalize lesson difficulty
+
+---
+
+Built with ❤️ at HackMIT for students everywhere.
